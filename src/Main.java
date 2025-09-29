@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.Random;
 
 public class Main {
@@ -11,27 +13,36 @@ public class Main {
                 System.out.println(temperaturas[i] + " grados");
             }
         }*/
-    //Ejercicio 2
-    int numRamdon = (int) (Math.random()*100) + 1;
-    int[] viwers = new int[200];
-    int[] mayores = new int[200];
-    int contador = 0;
+        //Ejercicio 2
+        int[] viwers = new int[200];          // Array principal
+        int[] mayoresQue1000 = new int[200];  // Para los números >1000
+        int[] menoresQue1000 = new int[200];  // Para los números <=1000
+        int contMayor = 0;
+        int contMenor = 0;
 
-     for (int x = 0; x <= 200-1; x++){
-         viwers[x] = (int) (Math.random()*1000) + 800;
-         System.out.println(viwers[x]);
-         if (viwers[x] > 1000){
-             mayores[contador] = viwers[x];
-             contador++;
-             System.out.println("Ha superado las visitas");
-         }else{
-             System.out.println("no ha superado");
-         }
+        for (int x = 0; x < viwers.length; x++) {
+            viwers[x] = (int) (Math.random() * 2000) + 1; // números entre 1 y 2000
+
+            if (viwers[x] > 1000) {
+                mayoresQue1000[contMayor] = viwers[x];
+                contMayor++;
+            } else {
+                menoresQue1000[contMenor] = viwers[x];
+                contMenor++;
+            }
         }
-        System.out.println("Han superado las visitas");
-     }else{
 
-    }
-    }
+        // Mostramos primero los mayores a 1000
+        System.out.println("Números mayores que 1000:");
+        for (int i = 0; i < contMayor; i++) {
+            System.out.println(mayoresQue1000[i] + " numeros mayores");
+        }
 
+        // Luego los menores o iguales a 1000
+        System.out.println("Números menores o iguales a 1000:");
+        for (int i = 0; i < contMenor; i++) {
+            System.out.println(menoresQue1000[i] + " numeros menores");
+        }
+    }
+}
 
