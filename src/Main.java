@@ -62,7 +62,7 @@ public class Main {
         System.out.println("Saldo Final: " + saldo + " €");
         System.out.println("Numero de ingresos: " + ingresos);
         System.out.println("Numero de gastos: " + gastos);
-        sc.close();*/
+        sc.close();
 
 
         //Ejercicio 4
@@ -75,8 +75,23 @@ public class Main {
                 System.out.println(notasClase[h] + " HAS SUSPENDIDO:(");
             }
         }
-        comprobanteNotas(notasClase);
-    }
+        comprobanteNotas(notasClase);*/
+
+        //Ejercicio 5
+        double[] numeros = {0.7346,0.2225,0.4214,0.1153};
+        double minima = numeros[0];
+        double maxima = numeros[0];
+        for (int i = 1;i<numeros.length;i++){
+            if (numeros[i]<minima){
+                minima = numeros[i];
+            }
+            if (numeros[i] > maxima){
+                maxima = numeros[i];
+            }
+        }
+        System.out.println("el numero mas pequeño es " + minima);
+        System.out.println("el numero mas grande es " + maxima);
+        }
 
     public static  void comprobanteNotas(int[] notas) {
         Scanner ph = new Scanner(System.in);
