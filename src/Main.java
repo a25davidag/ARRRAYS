@@ -75,7 +75,7 @@ public class Main {
                 System.out.println(notasClase[h] + " HAS SUSPENDIDO:(");
             }
         }
-        comprobanteNotas(notasClase);*/
+        comprobanteNotas(notasClase);
 
         //Ejercicio 5
         double[] numeros = {0.7346,0.2225,0.4214,0.1153};
@@ -90,7 +90,23 @@ public class Main {
             }
         }
         System.out.println("el numero mas pequeño es " + minima);
-        System.out.println("el numero mas grande es " + maxima);
+        System.out.println("el numero mas grande es " + maxima);*/
+
+        //Ejercicio 6
+        int[] juan = {3,2,1,3,2,3,3,2,3,2};
+        int[] sergio = {3,2,2,1,2,1,1,2,3,3};
+        int sumaJ = 0;
+        int sumaS = 0;
+        for ( int i = 0; i < juan.length; i++) {
+            sumaJ += juan[i];
+        }
+        System.out.println("La suma de juan " + sumaJ);
+        for ( int e = 0; e < sergio.length; e++){
+            sumaS += sergio[e];
+        }
+        System.out.println("Suma de sergio " + sumaS);
+        System.out.println("Suma total " + (sumaJ + sumaS));
+
         }
 
     public static  void comprobanteNotas(int[] notas) {
