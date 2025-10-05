@@ -6,7 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-       /* int[] temperaturas = {95, 120, 68, 34, 276, 34, 145};
+        // Ejercicio 1 La NASA está probando sensores de temperatura en las alas de un avión experimental.
+        //Crea un array de enteros que represente las temperaturas registradas en cada ala. Recorre el
+        //array y muestra únicamente las temperaturas que superan los 100 grados.
+
+        int[] temperaturas = {95, 120, 68, 34, 276, 34, 145};
         System.out.println("Temperatuars mayores a 100ºC");
 
         for (int i = 0; i < temperaturas.length ; i++) {
@@ -14,7 +18,10 @@ public class Main {
                 System.out.println(temperaturas[i] + " grados");
             }
         }
-        //Ejercicio 2
+        //Ejercicio 2 Un streamer guarda la cantidad de espectadores en cada hora de transmisión en un array.
+        //Recorre el array e imprime en quéhoras el número de espectadores fue mayor a 1000.
+        //Además, cuenta cuántas veces se superó esa cifra.
+
         int[] viwers = new int[10];
         int[] mayoresQue1000 = new int[10];
         int[] menoresQue1000 = new int[10];
@@ -40,7 +47,10 @@ public class Main {
         for (int i = 0; i < contMenor; i++) {
             System.out.println(menoresQue1000[i] + " numeros menores");
         }
-        //Ejercicio 3
+        //Ejercicio 3 Un banco registra en un array los movimientos de una cuenta (positivos ingresos,
+        //negativos gastos). Recorre el array y calcula el saldo final. Muestra también cuántos
+        //movimientos fueron ingresos y cuántos fueron gastos.
+
         Scanner sc = new Scanner(System.in);
         System.out.println(" Cuantos movimientos quieres hacer? ");
         int n = sc.nextInt();
@@ -65,7 +75,10 @@ public class Main {
         sc.close();
 
 
-        //Ejercicio 4
+        //Ejercicio 4 . Un profesor guarda las notas de 20 alumnos en un array. Recorre el array y determina
+        //cuántos alumnos han aprobado (nota >= 5). Crea una función que reciba una nota y
+        //devuelva si es aprobado o suspenso.
+
         int[] notasClase = {10, 5, 3, 4, 6, 7, 8, 9, 3, 1, 6, 8, 5, 7, 8, 9, 4, 3, 2, 5};
         System.out.println("Notas de clase");
         for (int h = 0; h < notasClase.length; h++) {
@@ -77,7 +90,9 @@ public class Main {
         }
         comprobanteNotas(notasClase);
 
-        //Ejercicio 5
+        //Ejercicio 5 Tienes un array con el tiempo de ejecución (en milisegundos) de varios algoritmos.
+        //Recorre el array y encuentra cuál fue el tiempo más rápido y el más lento.
+
         double[] numeros = {0.7346,0.2225,0.4214,0.1153};
         double minima = numeros[0];
         double maxima = numeros[0];
@@ -92,7 +107,10 @@ public class Main {
         System.out.println("el numero mas pequeño es " + minima);
         System.out.println("el numero mas grande es " + maxima);*/
 
-        //Ejercicio 6
+        //Ejercicio 6 En un partido de baloncesto, un array almacena los puntos anotados por cada jugador de
+        //un equipo. Recorre el array y muestra el total de puntos del equipo. Además calcula la media
+        //de puntos por jugador.
+
         int[] juan = {3,2,1,3,2,3,3,2,3,2};
         int[] sergio = {3,2,2,1,2,1,1,2,3,3};
         int sumaJ = 0;
